@@ -1,0 +1,139 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'CMD',
+1 verbose cli   'bin/hubot',
+1 verbose cli   '-a',
+1 verbose cli   'slack' ]
+2 info using npm@3.3.0
+3 info using node@v0.12.7
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData CMD
+8 silly fetchPackageMetaData bin/hubot
+9 silly fetchPackageMetaData slack
+10 silly fetchNamedPackageData CMD
+11 silly mapToRegistry name CMD
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/CMD
+15 silly fetchOtherPackageData bin/hubot
+16 silly cache add args [ 'bin/hubot', null ]
+17 verbose cache add spec bin/hubot
+18 silly fetchNamedPackageData slack
+19 silly mapToRegistry name slack
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/slack
+23 verbose request uri https://registry.npmjs.org/CMD
+24 verbose request no auth needed
+25 info attempt registry request try #1 at 08:09:11
+26 verbose request id 7f2cdd5656f12865
+27 http request GET https://registry.npmjs.org/CMD
+28 silly cache add parsed spec { raw: 'bin/hubot',
+28 silly cache add   scope: null,
+28 silly cache add   name: null,
+28 silly cache add   rawSpec: 'bin/hubot',
+28 silly cache add   spec: '/home/ec2-user/hubot/bin/hubot',
+28 silly cache add   type: 'local',
+28 silly cache add   hosted:
+28 silly cache add    { type: 'github',
+28 silly cache add      ssh: 'git@github.com:bin/hubot.git',
+28 silly cache add      sshUrl: 'git+ssh://git@github.com/bin/hubot.git',
+28 silly cache add      httpsUrl: 'git+https://github.com/bin/hubot.git',
+28 silly cache add      gitUrl: 'git://github.com/bin/hubot.git',
+28 silly cache add      shortcut: 'github:bin/hubot',
+28 silly cache add      directUrl: 'https://raw.githubusercontent.com/bin/hubot/master/package.json' } }
+29 verbose request uri https://registry.npmjs.org/slack
+30 verbose request no auth needed
+31 info attempt registry request try #1 at 08:09:11
+32 http request GET https://registry.npmjs.org/slack
+33 silly addLocalTarball shasum (computed) 5c6428c8adc375d6e9cf1a0635098000f494ab99
+34 verbose addTmpTarball /home/ec2-user/hubot/bin/hubot not in flight; adding
+35 verbose addTmpTarball validating metadata from /home/ec2-user/hubot/bin/hubot
+36 verbose tar unpack /home/ec2-user/hubot/bin/hubot
+37 verbose tar unpacking to /tmp/npm-28861-313b1393/unpack-18311428c982643ad684b35d6e54a2bd
+38 silly gentlyRm /tmp/npm-28861-313b1393/unpack-18311428c982643ad684b35d6e54a2bd is being purged
+39 verbose gentlyRm don't care about contents; nuking /tmp/npm-28861-313b1393/unpack-18311428c982643ad684b35d6e54a2bd
+40 silly gunzTarPerm modes [ '755', '644' ]
+41 error not a package /home/ec2-user/hubot/bin/hubot
+42 error addLocal Could not install /home/ec2-user/hubot/bin/hubot
+43 silly fetchPackageMetaData Error: ENOENT, open '/tmp/npm-28861-313b1393/unpack-18311428c982643ad684b35d6e54a2bd/package.json'
+43 silly fetchPackageMetaData     at Error (native)
+43 silly fetchPackageMetaData  error for bin/hubot { [Error: ENOENT, open '/tmp/npm-28861-313b1393/unpack-18311428c982643ad684b35d6e54a2bd/package.json']
+43 silly fetchPackageMetaData   errno: -2,
+43 silly fetchPackageMetaData   code: 'ENOENT',
+43 silly fetchPackageMetaData   path: '/tmp/npm-28861-313b1393/unpack-18311428c982643ad684b35d6e54a2bd/package.json' }
+44 http 200 https://registry.npmjs.org/slack
+45 silly get cb [ 200,
+45 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+45 silly get     etag: '"7R1QKHFUDPTMBKZRIIFGW7QSJ"',
+45 silly get     'content-type': 'application/json',
+45 silly get     'cache-control': 'max-age=60',
+45 silly get     'content-length': '3130',
+45 silly get     'accept-ranges': 'bytes',
+45 silly get     date: 'Tue, 18 Aug 2015 08:09:11 GMT',
+45 silly get     via: '1.1 varnish',
+45 silly get     age: '41',
+45 silly get     connection: 'keep-alive',
+45 silly get     'x-served-by': 'cache-sjc3125-SJC',
+45 silly get     'x-cache': 'HIT',
+45 silly get     'x-cache-hits': '1',
+45 silly get     'x-timer': 'S1439885351.732200,VS0,VE0',
+45 silly get     vary: 'Accept' } ]
+46 verbose get saving slack to /root/.npm/registry.npmjs.org/slack/.cache.json
+47 http 404 https://registry.npmjs.org/CMD
+48 verbose headers { 'cache-control': 'max-age=0',
+48 verbose headers   'transfer-encoding': 'chunked',
+48 verbose headers   'accept-ranges': 'bytes',
+48 verbose headers   date: 'Tue, 18 Aug 2015 08:09:11 GMT',
+48 verbose headers   via: '1.1 varnish',
+48 verbose headers   connection: 'keep-alive',
+48 verbose headers   'x-served-by': 'cache-sjc3130-SJC',
+48 verbose headers   'x-cache': 'MISS',
+48 verbose headers   'x-cache-hits': '0',
+48 verbose headers   'x-timer': 'S1439885351.732433,VS0,VE89' }
+49 silly get cb [ 404,
+49 silly get   { 'cache-control': 'max-age=0',
+49 silly get     'transfer-encoding': 'chunked',
+49 silly get     'accept-ranges': 'bytes',
+49 silly get     date: 'Tue, 18 Aug 2015 08:09:11 GMT',
+49 silly get     via: '1.1 varnish',
+49 silly get     connection: 'keep-alive',
+49 silly get     'x-served-by': 'cache-sjc3130-SJC',
+49 silly get     'x-cache': 'MISS',
+49 silly get     'x-cache-hits': '0',
+49 silly get     'x-timer': 'S1439885351.732433,VS0,VE89' } ]
+50 silly fetchPackageMetaData Error: 404 Not Found
+50 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:263:12)
+50 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:214:9)
+50 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:171:14)
+50 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+50 silly fetchPackageMetaData     at Request.emit (events.js:110:17)
+50 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1057:14)
+50 silly fetchPackageMetaData     at Request.emit (events.js:129:20)
+50 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1003:12)
+50 silly fetchPackageMetaData     at IncomingMessage.emit (events.js:129:20)
+50 silly fetchPackageMetaData     at _stream_readable.js:908:16
+50 silly fetchPackageMetaData  error for CMD { [Error: 404 Not Found] statusCode: 404, code: 'E404' }
+51 silly rollbackFailedOptional Starting
+52 silly rollbackFailedOptional Finishing
+53 silly runTopLevelLifecycles Starting
+54 silly runTopLevelLifecycles Finishing
+55 silly install printInstalled
+56 verbose stack Error: ENOENT, open '/tmp/npm-28861-313b1393/unpack-18311428c982643ad684b35d6e54a2bd/package.json'
+56 verbose stack     at Error (native)
+57 verbose cwd /home/ec2-user/hubot
+58 error Linux 3.14.35-28.38.amzn1.x86_64
+59 error argv "node" "/usr/local/bin/npm" "install" "CMD" "bin/hubot" "-a" "slack"
+60 error node v0.12.7
+61 error npm  v3.3.0
+62 error path /tmp/npm-28861-313b1393/unpack-18311428c982643ad684b35d6e54a2bd/package.json
+63 error code ENOENT
+64 error errno -2
+65 error enoent ENOENT, open '/tmp/npm-28861-313b1393/unpack-18311428c982643ad684b35d6e54a2bd/package.json'
+65 error enoent This is most likely not a problem with npm itself
+65 error enoent and is related to npm not being able to find a file.
+66 verbose exit [ -2, true ]
