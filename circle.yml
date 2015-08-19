@@ -4,11 +4,11 @@ machine:
 
 dependencies:
   override:
-    - docker build -t pgarbe/tatsu-hubot:v_$CIRCLE_BUILD_NUM .
+    - docker build -t sandwave/hubot-cortanat:v_$CIRCLE_BUILD_NUM .
 
 test:
   override:
-    - docker run -d pgarbe/tatsu-hubot:v_$CIRCLE_BUILD_NUM
+    - docker run -d sandwave/hubot-cortana:v_$CIRCLE_BUILD_NUM
 
 deployment:
   hub:
