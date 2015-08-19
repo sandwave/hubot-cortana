@@ -1,6 +1,6 @@
 # DOCKER-VERSION        1.3.2
 
-FROM bernardocy/hubot-cortana
+FROM sandwave/hubot-cortana
 MAINTAINER Bernard Ong
 
 ENV HUBOT_PORT 8080
