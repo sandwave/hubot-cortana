@@ -4,7 +4,7 @@ machine:
 
 dependencies:
   override:
-    - docker build -t sandwave/hubot-cortanat:v_$CIRCLE_BUILD_NUM .
+    - docker build -t sandwave/hubot-cortana:v_$CIRCLE_BUILD_NUM .
 
 test:
   override:
