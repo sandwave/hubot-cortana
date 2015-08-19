@@ -1,7 +1,7 @@
 # DOCKER-VERSION        1.3.2
 
-FROM nhoag/hubot
-MAINTAINER Nathaniel Hoag, info@nathanielhoag.com
+FROM bernardocy/hubot-cortana
+MAINTAINER Bernard Ong
 
 ENV HUBOT_PORT 8080
 ENV HUBOT_ADAPTER slack
